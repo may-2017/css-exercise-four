@@ -4,33 +4,51 @@ body {
 }
 
 .baku {
-  background: #fff url("/images/baku.jpg") no-repeat top center;
+  background: url("/images/baku.jpg") no-repeat top center;
 }
 
 .london {
-  background: #fff url("/images/london.png") no-repeat top center;
+  background: url("/images/london.png") no-repeat top center;
 }
 
 .madrid {
-  background: #fff url("/images/madrid.jpg") no-repeat top center;
+  background: url("/images/madrid.jpg") no-repeat top center;
 }
 
 .rome {
-  background: #fff url("/images/rome.jpg") no-repeat top center;
+  background: url("/images/rome.jpg") no-repeat top center;
 }
 
 .preview {
   background-size: 100%;
   height: 300px;
-  margin: 20px 0px
+  margin: 20px 0px;
 }
 
 @media screen and (min-width: 575px) {
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
   .preview {
-    background-size: 100%;
+    background-size: 120%;
     display: inline-block;
-    height: 200px;
-    width: 48%;
-    margin: 20px 0px;
+    height: 140px;
+    width: 40%;
+    margin: 10px 10px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
+  .preview {
+    background-size: 130%;
+    display: inline-block;
+    height: 140px;
+    width: 20%;
+    margin: 10px 10px;
   }
 }
