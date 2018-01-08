@@ -3,6 +3,22 @@ body {
   font-size: 16px;
 }
 
+h1 {
+  font-family: Baskerville, Athelas, Arial, sans-serif;
+  margin: 20px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: Chalkboard, Helvetica, Arial, sans-serif;
+  padding: 20px;
+}
+
+.content {
+  margin: auto;
+}
+
 .baku {
   background: url("/images/baku.jpg") no-repeat top center;
 }
@@ -27,15 +43,18 @@ body {
 
 @media screen and (min-width: 575px) {
   .container {
-    padding: 20px;
     margin: 20px;
+    padding: 20px;
   }
   .preview {
-    background-size: 120%;
+    background-size: 100%;
     display: inline-block;
-    height: 140px;
+    height: 130px;
     width: 40%;
     margin: 10px 10px;
+  }
+  h3 {
+    padding: 5%;
   }
 }
 
