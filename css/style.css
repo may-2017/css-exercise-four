@@ -1,3 +1,7 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 16px;
@@ -20,36 +24,37 @@ h3 {
 }
 
 .baku {
-  background: url("/images/baku.jpg") no-repeat top center;
+  background: url("/images/baku.jpg");
 }
 
 .london {
-  background: url("/images/london.png") no-repeat top center;
+  background: url("/images/london.png");
 }
 
 .madrid {
-  background: url("/images/madrid.jpg") no-repeat top center;
+  background: url("/images/madrid.jpg");
 }
 
 .rome {
-  background: url("/images/rome.jpg") no-repeat top center;
+  background: url("/images/rome.jpg");
 }
 
 .preview {
-  background-size: 100%;
+  background-size: cover;
   height: 300px;
   margin: 20px 0px;
 }
 
 @media screen and (min-width: 575px) {
-  .container {
+  .content {
+    transform: translate(50px, 0);
     margin: 20px;
     padding: 20px;
   }
   .preview {
-    background-size: 100%;
+    background-size: cover;
     display: inline-block;
-    height: 130px;
+    height: 140px;
     width: 40%;
     margin: 10px 10px;
   }
@@ -64,7 +69,7 @@ h3 {
     margin: 20px;
   }
   .preview {
-    background-size: 130%;
+    background-size: cover;
     display: inline-block;
     height: 140px;
     width: 20%;
